@@ -8,4 +8,4 @@ all: $(SOURCES)
 	$(CC) -o $(LAB) $(CFLAGS) $(SOURCES)
 
 clean:
-	rm -rf *o lab02
+	rm -rf *o $(LAB)
