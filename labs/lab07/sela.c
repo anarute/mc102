@@ -12,7 +12,8 @@ int main (){
 	for (i = 0; (i < linhas) && (temsela == 0); i++){
 		j = 0;
 		sela = matriz[i][j];
-
+		ptl = i;
+		ptc = j;
 		/* acha o minimo */
 		for(j = 0; (j < colunas); j++){
 			if (sela > matriz[i][j]){
@@ -36,7 +37,7 @@ int main (){
 			} else { 
 				temsela = 1;
 			}
-			if ((j == (linhas - 1)) && temsela == 1){
+			if ((j == (linhas - 1)) && (temsela == 1)){
 				break;
 			} 
 		}
